@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigitalClock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="maindiv">
+        <h1>Digital Clock ⏰</h1>
+        <p id="clock"></p>
+    </div>
+
+    <script>
+        const currenttime = () => {
+            let curtime = new Date().toLocaleTimeString();
+            document.getElementById("clock").innerText = `${curtime}`;
+        };
+        currenttime();
+        setInterval(() => {
+            currenttime();
+        },1000);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maindiv">
+        <p id="clock">Clock</p>
+        <section class="clockdiv">00:00:00</section>
+    </div>
+
+    <script>
+        const currenttime = () => {
+            let curtime = new Date();
+            document.getElementById("clock").innerText = curtime;
+        };
+        currenttime();
+    </script>
+</body>
+</html> -->
